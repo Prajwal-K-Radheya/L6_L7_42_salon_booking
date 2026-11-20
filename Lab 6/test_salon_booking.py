@@ -1,7 +1,6 @@
 import pytest
 from salon_booking import extra_time_charge, can_book, arrival_status
 
-
 # ---------- extra_time_charge ----------
 def test_within_included_time():
     assert extra_time_charge("haircut", 20, "junior", False) == 0

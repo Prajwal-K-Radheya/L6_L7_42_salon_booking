@@ -1,7 +1,6 @@
 from hypothesis import given, strategies as st
 from salon_booking import parse_booking, duration_average, payable_bill
 
-
 # Fuzz tests: any input must either succeed or raise a clean ValueError.
 # Any other exception (AttributeError, TypeError, OverflowError, ...) is a bug.
 

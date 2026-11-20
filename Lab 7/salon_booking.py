@@ -51,8 +51,6 @@ def payable_bill(text):
     if not math.isfinite(total):
         raise ValueError("amount out of range")
     return max(total, 0)
-
-
 def main():
     print("==== Running parse_booking ====")
     user_input = input("Enter service:duration in min (e.g. haircut:45): ")
@@ -68,7 +66,6 @@ def main():
     user_input = input("Enter bill|discount (e.g. 800|100): ")
     result = payable_bill(user_input)
     print("Payable Bill:", result)
-
 
 if __name__ == "__main__":
     main()
